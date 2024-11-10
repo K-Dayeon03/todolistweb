@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <!-- id, class 상관 x classname 사용 x  -->
+    <!-- 유효성 검사하기 위해서는 input이 form안에 있어야함. -->
+    <div class="container1">
+      <h1 id="clock">00:00</h1>
+      <form class="hidden" id="login-form">
+        <!-- input value를 하면 input에 선입력이 되어있음. -->
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="container2">
+      <h2 id="Todo-list">Todo-list 🔖</h2>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/bgimg.js"></script>
+  </body>
+</html>

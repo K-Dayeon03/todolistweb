@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.hidden {
+  display: none;
+}
+body {
+  display: flex;
+  justify-content: center; /* Centers the containers horizontally */
+  align-items: center; /* Centers the containers vertically */
+  min-height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed */
+  position: relative; /* Necessary for positioning the containers */
+}
+
+.container1 {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding: 10%;
+  position: absolute; /* Position it relative to the body */
+}
+
+.container1 input{
+  padding: 15px;
+  font-size: 15px;
+}
+
+.container1 #clock{
+  font-size: 55px;
+  font-style: italic;
+
+}
+
+.container1 #greeting{
+  font-size: 50px;
+}
+
+.container1 #quote{
+  font-style: oblique;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.container2 {
+  width: 30%; /* 30% width of the screen */
+  background-color: rgba(236, 240, 241, 0.1); /* Semi-transparent background */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* Apply blur effect behind the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute; /* Absolute positioning */
+  top: 40%; /* Vertically center the container */
+  left: 10%; /* Align container to the left */
+  transform: translateY(-50%); /* Ensure exact vertical centering */
+  text-align: left; /* Align text inside the container to the left */
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #333;
+  margin: 15px 0px 20px 0px;
+}
+
+.container2 h2 {
+  font-size: 30px;
+}
+.container2 #todo-list {
+  padding-left: 20px;
+  font-size: 20px;
+}
